@@ -10,15 +10,24 @@ public class EbayHomePageActions {
 	EbayHomePageLocators EbayHomePageLocatorsObj;
 	
 	public EbayHomePageActions(){
-
-	 EbayHomePageLocatorsObj = new EbayHomePageLocators();
-	 
-	 PageFactory.initElements(SetupDrivers.driver, EbayHomePageLocatorsObj);
-	 
+		EbayHomePageLocatorsObj = new EbayHomePageLocators();
+		PageFactory.initElements(SetupDrivers.driver, EbayHomePageLocatorsObj);
 	}
-	
-	public void searchShoes() {
+
+	public void searchShoes(){
 		EbayHomePageLocatorsObj.txtbxSearch.sendKeys("Shoes");
 		EbayHomePageLocatorsObj.btnSearch.click();
 	}
+	
+	public void searchPants(){
+		EbayHomePageLocatorsObj.txtbxSearch.sendKeys("Pants");
+		EbayHomePageLocatorsObj.btnSearch.click();
+	}
+	
+	public void searchShirts(){
+		EbayHomePageLocatorsObj.txtbxSearch.sendKeys("Shirts");
+		EbayHomePageLocatorsObj.btnSearch.click();
+	}
+	
+	
 }
