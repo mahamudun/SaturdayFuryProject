@@ -13,6 +13,6 @@ Description: User should able to filter items by Brand
 	
 	Examples:
 		|Items		|Brand		|
-		|Shoes		|Nike		|
+		|Shoes		|Nike			|
 		|Shirts		|Adidas		|
-		|Pants		|Unbranded	|
+		|Pants		|Unbranded|
