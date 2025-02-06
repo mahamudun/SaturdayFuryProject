@@ -25,6 +25,7 @@ public class SetupDrivers {
 		options.addArguments("--disable-notifications");	//add argument to diable notifications
 //		options.addArguments("--headless");					//headless execution
 		driver = new ChromeDriver(options);					//initializing chrome driver
+//		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		driver.get("https://www.ebay.com/");				//loading the page
 	}
 	
