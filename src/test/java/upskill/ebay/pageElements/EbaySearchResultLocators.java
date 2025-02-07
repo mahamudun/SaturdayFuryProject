@@ -28,5 +28,11 @@ public class EbaySearchResultLocators {
 	//Checkbox Brand Unbranded
 	@FindBy(xpath="//input[@aria-label='Unbranded']")
 	public WebElement cbxBrandUnbranded;
+	
+	//Checkbox Shoe Size 10
+	@FindBy(xpath="//input[@aria-label='10']")
+	public WebElement cbxShoeSize10;
+	
+	
 
 }
