@@ -4,7 +4,6 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import upskill.ebay.pageElements.EbayHomePageLocators;
@@ -58,10 +57,10 @@ public class EbayHomePageActions {
 		WebDriverWait explicitWait = new WebDriverWait(SetupDrivers.driver, 10);
 		explicitWait.until(ExpectedConditions.elementToBeClickable(EbayHomePageLocatorsObj.btnSearch));
 		
-		//Fluent Wait
+	/*	Fluent Wait
 		FluentWait fluentWait = new FluentWait(SetupDrivers.driver);								
 		fluentWait.withTimeout(10, TimeUnit.SECONDS);
-		fluentWait.pollingEvery(2, TimeUnit.SECONDS);
-	}
+		fluentWait.pollingEvery(2, TimeUnit.SECONDS);   */
+	}  
 	
 }

@@ -32,4 +32,15 @@ public class EbaySearchResultSteps {
 	public void item_list_should_have_products_of(String brand) throws Throwable {
 		EbaySearchResultActionsObj.verifyBrandItems(brand);
 	}
+	
+	@When("^User select \"([^\"]*)\"$")
+	public void user_select(String size) throws Throwable {
+		EbaySearchResultActionsObj.filterSize(size);
+	}
+	
+	@Then("^Item list should have size of \"([^\"]*)\"$")
+	public void item_list_should_have_size_of(String size) throws Throwable {
+		EbaySearchResultActionsObj.verifyItemsSize(size);
+	}
+
 }

@@ -74,5 +74,29 @@ public class EbaySearchResultActions {
 			System.out.println("Brand not found");
 		}
 	}
+	
+	public void filterSize(String size){
+		if(size.equals("10")){
+			EbaySearchResultLocatorsObj.cbxShoeSize10.click();
+		} else if(size.equals("L")){
+			EbaySearchResultLocatorsObj.cbxShirtSizeL.click();  
+		}else if(size.equals("Tall")){
+			EbaySearchResultLocatorsObj.cbxPantSizeTall.click();  
+		} else{
+			System.out.println("Brand not found");
+		}	
+	}
+	
+	public void verifyItemsSize(String size){
+		if(size.equals("10")){
+			Assert.assertEquals("Shoes", EbaySearchResultLocatorsObj.txtShoes.getText());
+		} else if(size.equals("L")){
+			Assert.assertEquals("Shirts", EbaySearchResultLocatorsObj.txtShirts.getText());
+		}else if(size.equals("Tall")){
+			Assert.assertEquals("Pants", EbaySearchResultLocatorsObj.txtPants.getText()); 
+		} else{
+			System.out.println("Brand not found");
+		}
+	}
 
 }

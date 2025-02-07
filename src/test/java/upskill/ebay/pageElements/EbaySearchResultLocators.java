@@ -16,23 +16,29 @@ public class EbaySearchResultLocators {
 	// Validate Shirts Items
 	@FindBy(xpath = "//span[2][contains(text(), 'Shirts')]")
 	public WebElement txtShirts;
-	
-	//Checkbox Brand Adidas
-	@FindBy(xpath="//input[@aria-label='adidas']")
+
+	// Checkbox Brand Adidas
+	@FindBy(xpath = "//input[@aria-label='adidas']")
 	public WebElement cbxBrandAdidas;
 
-	//Checkbox Brand Nike
-	@FindBy(xpath="//input[@aria-label='Nike']")
+	// Checkbox Brand Nike
+	@FindBy(xpath = "//input[@aria-label='Nike']")
 	public WebElement cbxBrandNike;
 
-	//Checkbox Brand Unbranded
-	@FindBy(xpath="//input[@aria-label='Unbranded']")
+	// Checkbox Brand Unbranded
+	@FindBy(xpath = "//input[@aria-label='Unbranded']")
 	public WebElement cbxBrandUnbranded;
-	
-	//Checkbox Shoe Size 10
-	@FindBy(xpath="//input[@aria-label='10']")
+
+	// Checkbox Shoe Size 10
+	@FindBy(xpath = "//input[@aria-label='10']")
 	public WebElement cbxShoeSize10;
-	
-	
+
+	// Checkbox Shirts Size L
+	@FindBy(xpath = "//span[normalize-space()='L']")
+	public WebElement cbxShirtSizeL;
+
+	// Checkbox Pant Size Tall
+	@FindBy(xpath = "//input[@aria-label='Tall']")
+	public WebElement cbxPantSizeTall;
 
 }
