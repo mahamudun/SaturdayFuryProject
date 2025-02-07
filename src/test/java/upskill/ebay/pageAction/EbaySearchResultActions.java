@@ -83,7 +83,7 @@ public class EbaySearchResultActions {
 		}else if(size.equals("Tall")){
 			EbaySearchResultLocatorsObj.cbxPantSizeTall.click();  
 		} else{
-			System.out.println("Brand not found");
+			System.out.println("Size not found");
 		}	
 	}
 	
@@ -95,7 +95,7 @@ public class EbaySearchResultActions {
 		}else if(size.equals("Tall")){
 			Assert.assertEquals("Pants", EbaySearchResultLocatorsObj.txtPants.getText()); 
 		} else{
-			System.out.println("Brand not found");
+			System.out.println("Size not found");
 		}
 	}
 
