@@ -33,4 +33,18 @@ public class EbayHomePageSteps {
 		EbayHomePageActionsObj.searchItems(items);
 	}
 
+	@Given("^User type Starwars in Search text box$")
+	public void user_type_Starwars_in_Search_text_box() throws Throwable {
+	 
+	}
+
+	@When("^Select Book from Category dropdown$")
+	public void select_Book_from_Category_dropdown() throws Throwable {
+	   
+	}
+
+	@When("^Click on Search button$")
+	public void click_on_Search_button() throws Throwable {
+	    
+	}
 }

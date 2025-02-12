@@ -41,4 +41,8 @@ public class EbaySearchResultLocators {
 	@FindBy(xpath = "//input[@aria-label='Tall']")
 	public WebElement cbxPantSizeTall;
 
+	//Validate Starwars Items
+		@FindBy(xpath="//span[2][contains(text(), 'Starwars')]")
+		public WebElement txtStarwars;
+
 }

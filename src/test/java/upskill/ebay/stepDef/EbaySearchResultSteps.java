@@ -42,5 +42,11 @@ public class EbaySearchResultSteps {
 	public void item_list_should_have_size_of(String size) throws Throwable {
 		EbaySearchResultActionsObj.verifyItemsSize(size);
 	}
+	
+	@Then("^Item list should have Starwars related Books$")
+	public void item_list_should_have_Starwars_related_Books() throws Throwable {
+	  
+	}
+
 
 }
